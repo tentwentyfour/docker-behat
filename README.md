@@ -40,3 +40,7 @@ If you want to use [Phactory](http://phactory.org/) with your behat scenarios, y
 If you need adapt the project to your needs, clone, modify the `Dockerfile` and from the source directory, run:
 
     docker build -t 1024/behat .
+
+## Docker Hub
+
+This repository is availabe as an automated build: [1024/behat](https://registry.hub.docker.com/u/1024/behat/) on the Docker Hub Registry.
