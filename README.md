@@ -4,8 +4,8 @@ docker-behat
 This repository is the source of `tvial/behat` which brings :  
 - php5-cli with PHP 5.6
 - PHP modules: php5-mysqlnd & php5-curl
-- behat 3.0 / mink 2.0
-- mink-selenium-driver 1.2
+- behat 3.0 / mink 1.6
+- mink-selenium2-driver 1.2
 - mink-goutte-driver 1.1
 - phactory 0.4.3  
 
