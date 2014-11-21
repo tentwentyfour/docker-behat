@@ -1,13 +1,14 @@
 docker-behat
 ============
 
-This repository is the source of `tvial/behat` which brings :  
+This repository is the source of `1024/behat`, forked from [`tvial/behat`](https://github.com/tomav/docker-behat), which brings :  
+
 - php5-cli with PHP 5.6
 - PHP modules: php5-mysqlnd & php5-curl
 - behat 3.0 / mink 1.6
 - mink-selenium2-driver 1.2
 - mink-goutte-driver 1.1
-- phactory 0.4.3  
+- phactory 0.4.3 for all your test factory needs…
 
 ## Install
 
@@ -31,7 +32,7 @@ You should see a prompt containing `[ docker-behat ]` and have `behat` command a
 
 ### Using Phactory
 
-If you want to use [Phactory](http://phactory.org/) with your behat scenarios, you will need to link this container to your database container:
+If you would like to use [Phactory](http://phactory.org/) with your behat scenarios, you will need to link this container to your database container:
 
     docker run --rm --link mysqldb:db -e DB_USER=admin -e DB_PASS=thepassword -e DB_NAME=dbname -ti -h docker-behat -v $(pwd):/home/behat/data:rw 1024/behat /bin/bash -c "behat"
 
