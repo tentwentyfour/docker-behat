@@ -1,12 +1,15 @@
 {
+  "name": "1024/behat",
+  "minimum-stability": "stable",
   "require": {
-    "behat/behat": "3.0.*@stable",
-    "behat/mink": "1.5@stable",
-    "behat/mink-selenium2-driver": "*",
-    "behat/mink-extension": "*",
-    "phpunit/phpunit": "3.7.*"
+    "behat/behat": "~3.0",
+    "behat/mink": "~1.5",
+    "behat/mink-selenium2-driver": "~1.2",
+    "behat/mink-goutte-driver": "~1.1",
+    "behat/mink-extension": "~ 1.6",
+    "phpunit/phpunit": "3.7.*",
+    "chriskite/phactory": "~0.4"
   },
-  "minimum-stability": "dev",
   "config": {
     "bin-dir": "bin/"
   }
