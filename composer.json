@@ -8,8 +8,7 @@
     "behat/mink-goutte-driver": "~1.1",
     "behat/mink-extension": "~2.0",
     "phpunit/phpunit": "3.7.*",
-    "chriskite/phactory": "~0.4",
-    "emuse/behat-html-formatter": "dev-master@dev"
+    "chriskite/phactory": "~0.4"
   },
   "config": {
     "bin-dir": "bin/"
