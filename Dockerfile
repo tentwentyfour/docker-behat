@@ -15,6 +15,8 @@ RUN echo "behat:behat" | chpasswd
 ADD behat /home/behat/behat
 RUN chmod +x /home/behat/behat
 
+RUN mkdir -p /home/behat/data/build/html/behat/
+
 # Fix permissions
 RUN chown -R behat:behat /home/behat
 
