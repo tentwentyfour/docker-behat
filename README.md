@@ -1,7 +1,7 @@
 docker-behat
 ============
 
-This repository is the source of `1024/behat`, forked from [`tvial/behat`](https://github.com/tomav/docker-behat), which brings :  
+This repository is the source of `1024/behat`, forked from [`tvial/behat`](https://github.com/tomav/docker-behat), which brings :
 
 - php5-cli with PHP 5.6
 - PHP modules: php5-mysqlnd & php5-curl
@@ -9,6 +9,17 @@ This repository is the source of `1024/behat`, forked from [`tvial/behat`](https
 - mink-selenium2-driver 1.2
 - mink-goutte-driver 1.1
 - phactory 0.4.3 for all your test factory needs…
+- Symfony's property-access
+
+Furthermore, the following Contexts are available:
+
+- behat/web-api-extension
+- behatch/contexts
+- knplabs/friendly-contexts
+
+It also ships with the following formatters:
+
+- emuse/behat-html-formatter
 
 ## Install
 
@@ -16,19 +27,19 @@ This repository is the source of `1024/behat`, forked from [`tvial/behat`](https
 
 ## Usage
 
-On your host, you can add the `behat()` function to your shell environnement:  
+On your host, you can add the `behat()` function to your shell environnement:
 
     function behat() { docker run -ti --rm -h docker-behat -v $(pwd):/home/behat/data:rw 1024/behat /bin/bash -c "behat $*" ;}
 
 You can now call `behat` command from your host, it will be executed in your docker container.
-Note that the container will be removed when the behat process will end usins `--rm`.  
-A `data` folder is mounted read/write to your current folder (the one you launched docker-behat).  
+Note that the container will be removed when the behat process will end usins `--rm`.
+A `data` folder is mounted read/write to your current folder (the one you launched docker-behat).
 
 Or:
 
-    docker run -t -i -h docker-behat -v $(pwd):/home/behat/data:rw 1024/behat /bin/bash  
+    docker run -t -i -h docker-behat -v $(pwd):/home/behat/data:rw 1024/behat /bin/bash
 
-You should see a prompt containing `[ docker-behat ]` and have `behat` command available.  
+You should see a prompt containing `[ docker-behat ]` and have `behat` command available.
 
 ### Using Phactory
 
