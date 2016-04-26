@@ -13,7 +13,9 @@
     "phpunit/dbunit": "~1.2",
     "chriskite/phactory": "~0.4",
     "emuse/behat-html-formatter": "dev-master@dev",
-    "behatch/contexts": "~2.1"
+    "behatch/contexts": "~2.1",
+	"knplabs/friendly-contexts": "~0.7",
+	"symfony/property-access": "~2.3"
   },
   "config": {
     "bin-dir": "bin/"
