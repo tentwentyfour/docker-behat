@@ -8,14 +8,15 @@
     "behat/mink-goutte-driver": "~1.1",
     "behat/mink-extension": "~2.0",
     "behat/web-api-extension": "~1.0@dev",
-	  "kriswallsmith/buzz": "~0.14.0",
+    "kriswallsmith/buzz": "~0.14.0",
     "phpunit/phpunit": "~4.0",
     "phpunit/dbunit": "~1.2",
     "chriskite/phactory": "~0.4",
+    "league/factory-muffin": "~2.0",
     "emuse/behat-html-formatter": "dev-master@dev",
     "behatch/contexts": "~2.1",
-	  "knplabs/friendly-contexts": "~0.7",
-	  "symfony/property-access": "~2.3"
+    "knplabs/friendly-contexts": "~0.7",
+    "symfony/property-access": "~2.3"
   },
   "config": {
     "bin-dir": "bin/"

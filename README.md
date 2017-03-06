@@ -9,6 +9,7 @@ This repository is the source of `1024/behat`, forked from [`tvial/behat`](https
 - mink-selenium2-driver 1.2
 - mink-goutte-driver 1.1
 - phactory 0.4.3 for all your test factory needs…
+- theleague/factory-muffin 2.0 which will replace phactory in the long run
 - Symfony's property-access
 
 Furthermore, the following Contexts are available:
