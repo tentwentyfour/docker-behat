@@ -4,7 +4,7 @@ MAINTAINER David Raison <david@tentwentyfour.lu>
 # Update and install packages
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
-RUN apt-get install -y curl git vim
+RUN apt-get install -y curl git 
 RUN apt-get install -y -q php5-cli php5-curl php5-mysqlnd
 
 # Create "behat" user with password crypted "behat"
@@ -33,3 +33,6 @@ RUN mkdir /home/behat/composer
 ADD composer.json /home/behat/composer/composer.json
 RUN cd /home/behat/composer && curl http://getcomposer.org/installer | php
 RUN cd /home/behat/composer && php composer.phar install --prefer-source
+
+ENTRYPOINT ["behat"]
+CMD "--colors -p $BEHAT_PROFILE"
