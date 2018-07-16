@@ -35,4 +35,4 @@ RUN cd /home/behat/composer && curl http://getcomposer.org/installer | php
 RUN cd /home/behat/composer && php composer.phar install --prefer-source
 
 ENTRYPOINT ["behat"]
-CMD ["--colors"]
+CMD "--colors -p $BEHAT_PROFILE"
