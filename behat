@@ -1,3 +1,2 @@
 #!/bin/sh
-sleep 5
-cd /home/behat/data && /home/behat/composer/bin/behat $@
+cd /home/behat/data && /home/behat/composer/bin/behat $*
