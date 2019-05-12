@@ -1,11 +1,11 @@
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER David Raison <david@tentwentyfour.lu>
 
 # Update and install packages
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install -y curl git vim
-RUN apt-get install -y -q php5-cli php5-curl php5-mysqlnd
+RUN apt-get install -y -q php-cli php-curl php-mysql php-mbstring php-dom
 
 # Create "behat" user with password crypted "behat"
 RUN useradd -d /home/behat -m -s /bin/bash behat
