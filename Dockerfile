@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 MAINTAINER David Raison <david@tentwentyfour.lu>
 
 # Update and install packages
@@ -8,8 +8,8 @@ RUN apt-get install -y curl git vim ca-certificates curl apt-transport-https lsb
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 RUN sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
 RUN apt-get update
-RUN apt-get install -y php5.6-mysqlnd php5.6-cli php5.6-curl \
-        php5.6-bcmath php5.6-intl php5.6-mbstring php5.6-xml
+RUN apt-get install -y php7.3-mysqlnd php7.3-cli php7.3-curl \
+        php7.3-bcmath php7.3-intl php7.3-mbstring php7.3-xml
 
 # Create "behat" user with password crypted "behat"
 RUN useradd -d /home/behat -m -s /bin/bash behat
