@@ -12,7 +12,6 @@
     "phpunit/phpunit": "~4.0",
     "phpunit/dbunit": "~1.2",
     "chriskite/phactory": "~0.4",
-    "league/factory-muffin": "~2.0",
     "emuse/behat-html-formatter": "dev-master@dev",
     "behatch/contexts": "~2.1",
     "knplabs/friendly-contexts": "~0.7",
