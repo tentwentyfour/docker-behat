@@ -28,10 +28,12 @@ RUN mkdir -p /home/behat/data/build/html/behat/ && \
 # Add "behat" to "sudoers"
 #RUN echo "behat        ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
-
 WORKDIR /home/behat/composer
 ADD composer.json /home/behat/composer/composer.json
 ADD composer.lock /home/behat/composer/composer.lock
+USER root
+RUN chown behat:behat composer.*
+USER behat
 RUN curl http://getcomposer.org/installer | php && \
   php composer.phar install --prefer-source && \
   rm -rf /home/behat/.composer
