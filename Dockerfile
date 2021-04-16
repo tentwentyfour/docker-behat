@@ -24,7 +24,6 @@ ADD behat /home/behat/behat
 RUN mkdir -p /home/behat/data/build/html/behat/ && \
   mkdir /home/behat/composer
 
-#chown -R behat:behat /home/behat && \
 # Add "behat" to "sudoers"
 #RUN echo "behat        ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
